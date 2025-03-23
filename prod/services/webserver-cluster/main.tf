@@ -14,7 +14,7 @@ terraform {
 }
 
 module "webserver_cluster" {
-  source = "../../../modules/services/webserver-cluster"
+  source = "github.com/kenteru59/practice4_module_version_manage//services/webserver-cluster?ref=v0.0.1"
 
   cluster_name           = "webserver-prod"
   db_remote_state_bucket = "terraform-up-and-running-state-20250309"
